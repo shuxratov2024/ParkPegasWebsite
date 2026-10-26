@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uz" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .lang-btn.active { color: #eab308; font-weight: bold; }
+        .lang-btn.active {
+            color: #eab308;
+            font-weight: bold;
+        }
+
         /* Honeypot (Bot tuzog'i) maydonini yashirish */
-        .h-pot { position: absolute; left: -9999px; opacity: 0; }
+        .h-pot {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+        }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans">
 
     <!-- Suzib yuruvchi Telegram tugmasi -->
-    <a href="https://t.me/park_pegas_yandex" target="_blank" class="fixed bottom-6 right-6 bg-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-blue-600 transition transform hover:scale-110 z-50 animate-bounce">
+    <a href="https://t.me/park_pegas_yandex" target="_blank"
+        class="fixed bottom-6 right-6 bg-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-blue-600 transition transform hover:scale-110 z-50 animate-bounce">
         <i class="fa-brands fa-telegram text-3xl"></i>
     </a>
 
@@ -25,7 +36,7 @@
             <div class="text-xl md:text-2xl font-bold text-yellow-500">
                 <i class="fa-solid fa-taxi text-black"></i> Park<span class="text-black">Pegas</span>
             </div>
-            
+
             <div class="hidden lg:flex space-x-5 items-center text-sm font-medium">
                 <a href="#afzalliklar" class="hover:text-yellow-500 transition" data-i18n="nav_adv">Afzalliklar</a>
                 <a href="#talablar" class="hover:text-yellow-500 transition" data-i18n="nav_req">Talablar</a>
@@ -41,7 +52,9 @@
                     <span class="text-gray-300">|</span>
                     <button onclick="changeLang('ru')" class="lang-btn transition" id="btn-ru">RU</button>
                 </div>
-                <a href="#ariza" class="bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 transition hidden md:block" data-i18n="nav_join">Ulanish</a>
+                <a href="#ariza"
+                    class="bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 transition hidden md:block"
+                    data-i18n="nav_join">Ulanish</a>
             </div>
         </div>
     </header>
@@ -52,30 +65,38 @@
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6" data-i18n="hero_title">
                 Yandex Go orqali bugunoq <span class="text-yellow-500">pul ishlashni</span> boshlang
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto" data-i18n="hero_desc">Shaxsiy avtomobilingizda erkin grafik asosida ishlang. Bizning taksopark orqali ulanganingizda kunlik va avtomatik to'lovlar kafolatlanadi.</p>
-            <a href="#ariza" class="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-yellow-400 transition shadow-lg shadow-yellow-500/30" data-i18n="hero_btn">Hozirroq ariza qoldirish</a>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto" data-i18n="hero_desc">Shaxsiy
+                avtomobilingizda erkin grafik asosida ishlang. Bizning taksopark orqali ulanganingizda kunlik va
+                avtomatik to'lovlar kafolatlanadi.</p>
+            <a href="#ariza"
+                class="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-yellow-400 transition shadow-lg shadow-yellow-500/30"
+                data-i18n="hero_btn">Hozirroq ariza qoldirish</a>
         </div>
     </section>
 
     <!-- Nega aynan biz? -->
     <section id="afzalliklar" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-i18n="adv_title">Nima uchun bizning taksoparkni tanlashadi?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-i18n="adv_title">Nima uchun bizning
+                taksoparkni tanlashadi?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
                 <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition">
                     <i class="fa-solid fa-wallet text-5xl text-yellow-500 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2" data-i18n="adv_1_title">Tezkor to'lovlar</h3>
-                    <p class="text-gray-600" data-i18n="adv_1_desc">Ishlagan pulingizni kuttirmasdan, kunning istalgan vaqtida kartangizga chiqarib olish imkoniyati.</p>
+                    <p class="text-gray-600" data-i18n="adv_1_desc">Ishlagan pulingizni kuttirmasdan, kunning istalgan
+                        vaqtida kartangizga chiqarib olish imkoniyati.</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition">
                     <i class="fa-solid fa-clock md:text-5xl text-5xl text-yellow-500 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2" data-i18n="adv_2_title">Erkin ish grafiki</h3>
-                    <p class="text-gray-600" data-i18n="adv_2_desc">Qachon va qancha ishlashni o'zingiz hal qilasiz. Rahbarlarsiz, o'zingiz uchun ishlaysiz.</p>
+                    <p class="text-gray-600" data-i18n="adv_2_desc">Qachon va qancha ishlashni o'zingiz hal qilasiz.
+                        Rahbarlarsiz, o'zingiz uchun ishlaysiz.</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition">
                     <i class="fa-solid fa-headset text-5xl text-yellow-500 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2" data-i18n="adv_3_title">24/7 Qo'llab-quvvatlash</h3>
-                    <p class="text-gray-600" data-i18n="adv_3_desc">Texnik yoki dastur bilan bog'liq har qanday savolga dispetcherlarimiz kechayu kunduz javob berishadi.</p>
+                    <p class="text-gray-600" data-i18n="adv_3_desc">Texnik yoki dastur bilan bog'liq har qanday savolga
+                        dispetcherlarimiz kechayu kunduz javob berishadi.</p>
                 </div>
             </div>
         </div>
@@ -84,22 +105,33 @@
     <!-- Talablar -->
     <section id="talablar" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-i18n="req_title">Haydovchi va avtomobilga talablar</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-i18n="req_title">Haydovchi va avtomobilga
+                talablar</h2>
             <div class="flex flex-col md:flex-row gap-10 max-w-5xl mx-auto">
                 <div class="bg-white p-8 rounded-2xl shadow-md w-full md:w-1/2 border-t-4 border-yellow-500">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fa-solid fa-user-tie text-yellow-500 mr-3"></i> <span data-i18n="req_driver">Haydovchi uchun</span></h3>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i
+                            class="fa-solid fa-user-tie text-yellow-500 mr-3"></i> <span
+                            data-i18n="req_driver">Haydovchi uchun</span></h3>
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span data-i18n="req_d1">Kerakli hujjatlar: Pasport, Prava va Tex. pasport</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span data-i18n="req_d2">Haydovchilik staji talab qilinmaydi (Staj shart emas)</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span data-i18n="req_d3">Smartfon</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span
+                                data-i18n="req_d1">Kerakli hujjatlar: Pasport, Prava va Tex. pasport</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span
+                                data-i18n="req_d2">Haydovchilik staji talab qilinmaydi (Staj shart emas)</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span
+                                data-i18n="req_d3">Smartfon</span></li>
                     </ul>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-md w-full md:w-1/2 border-t-4 border-yellow-500">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fa-solid fa-car text-yellow-500 mr-3"></i> <span data-i18n="req_car">Avtomobil uchun</span></h3>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i
+                            class="fa-solid fa-car text-yellow-500 mr-3"></i> <span data-i18n="req_car">Avtomobil
+                            uchun</span></h3>
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span data-i18n="req_c1">Ishlab chiqarilgan yili 1996 va undan yuqori</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span data-i18n="req_c2">Texnik va estetik jihatdan soz holatda bo'lishi</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span data-i18n="req_c3">Avtomobil soz holati tekshiruvdan o'tgan bo'lishi kerak</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span
+                                data-i18n="req_c1">Ishlab chiqarilgan yili 1996 va undan yuqori</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span
+                                data-i18n="req_c2">Texnik va estetik jihatdan soz holatda bo'lishi</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span
+                                data-i18n="req_c3">Avtomobil soz holati tekshiruvdan o'tgan bo'lishi kerak</span></li>
                     </ul>
                 </div>
             </div>
@@ -112,24 +144,36 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-12" data-i18n="steps_title">Ishni qanday boshlash mumkin?</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="relative">
-                    <div class="w-20 h-20 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-sm">1</div>
+                    <div
+                        class="w-20 h-20 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-sm">
+                        1</div>
                     <h3 class="text-xl font-bold mb-2" data-i18n="s1_t">Ariza qoldirish</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="s1_d">Saytdagi formani to'ldiring, menejerlar tezda aloqaga chiqishadi.</p>
+                    <p class="text-gray-600 text-sm" data-i18n="s1_d">Saytdagi formani to'ldiring, menejerlar tezda
+                        aloqaga chiqishadi.</p>
                 </div>
                 <div class="relative">
-                    <div class="w-20 h-20 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-sm">2</div>
+                    <div
+                        class="w-20 h-20 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-sm">
+                        2</div>
                     <h3 class="text-xl font-bold mb-2" data-i18n="s2_t">Hujjatlar</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="s2_d">Telegram orqali kerakli hujjatlar rasmini yuborasiz.</p>
+                    <p class="text-gray-600 text-sm" data-i18n="s2_d">Telegram orqali kerakli hujjatlar rasmini
+                        yuborasiz.</p>
                 </div>
                 <div class="relative">
-                    <div class="w-20 h-20 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-sm">3</div>
+                    <div
+                        class="w-20 h-20 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-sm">
+                        3</div>
                     <h3 class="text-xl font-bold mb-2" data-i18n="s3_t">Dastur</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="s3_d">Smartfoningizga Yandex Pro dasturini o'rnatamiz va sozlaymiz.</p>
+                    <p class="text-gray-600 text-sm" data-i18n="s3_d">Smartfoningizga Yandex Pro dasturini o'rnatamiz va
+                        sozlaymiz.</p>
                 </div>
                 <div class="relative">
-                    <div class="w-20 h-20 mx-auto bg-yellow-500 text-black rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-md">4</div>
+                    <div
+                        class="w-20 h-20 mx-auto bg-yellow-500 text-black rounded-full flex items-center justify-center text-3xl font-black mb-4 shadow-md">
+                        4</div>
                     <h3 class="text-xl font-bold mb-2" data-i18n="s4_t">Daromad</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="s4_d">Liniyaga chiqib, birinchi buyurtmalarni qabul qilasiz va pul ishlaysiz.</p>
+                    <p class="text-gray-600 text-sm" data-i18n="s4_d">Liniyaga chiqib, birinchi buyurtmalarni qabul
+                        qilasiz va pul ishlaysiz.</p>
                 </div>
             </div>
         </div>
@@ -138,28 +182,36 @@
     <!-- FAQ (Savollar) -->
     <section id="faq" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-i18n="faq_title">Ko'p beriladigan savollar</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-i18n="faq_title">Ko'p beriladigan savollar
+            </h2>
             <div class="space-y-4">
                 <details class="group bg-white p-6 rounded-xl shadow-sm cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-lg list-none">
                         <span data-i18n="f1_q">Taksopark komissiyasi qancha?</span>
                         <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
                     </summary>
-                    <p class="text-gray-600 mt-4 leading-relaxed" data-i18n="f1_a">Bizning taksopark komissiyasi hududdagi eng arzonlaridan biri hisoblanadi. Shuningdek, yashirin to'lovlar yo'q. Aniq foizlar bo'yicha operatorimiz arizangizdan so'ng batafsil ma'lumot beradi.</p>
+                    <p class="text-gray-600 mt-4 leading-relaxed" data-i18n="f1_a">Bizning taksopark komissiyasi
+                        hududdagi eng arzonlaridan biri hisoblanadi. Shuningdek, yashirin to'lovlar yo'q. Aniq foizlar
+                        bo'yicha operatorimiz arizangizdan so'ng batafsil ma'lumot beradi.</p>
                 </details>
                 <details class="group bg-white p-6 rounded-xl shadow-sm cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-lg list-none">
                         <span data-i18n="f2_q">Ishlagan pulimni qanday yechib olaman?</span>
                         <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
                     </summary>
-                    <p class="text-gray-600 mt-4 leading-relaxed" data-i18n="f2_a">Biz avtomatik to'lovlar tizimiga ulanganmiz. Ishlagan pullaringizni 24/7 rejimida dam olish kunlarisiz Telegram bot yoki Yandex Pro'ning o'zidan to'g'ridan-to'g'ri plastik kartangizga o'tkazib olishingiz mumkin.</p>
+                    <p class="text-gray-600 mt-4 leading-relaxed" data-i18n="f2_a">Biz avtomatik to'lovlar tizimiga
+                        ulanganmiz. Ishlagan pullaringizni 24/7 rejimida dam olish kunlarisiz Telegram bot yoki Yandex
+                        Pro'ning o'zidan to'g'ridan-to'g'ri plastik kartangizga o'tkazib olishingiz mumkin.</p>
                 </details>
                 <details class="group bg-white p-6 rounded-xl shadow-sm cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-lg list-none">
                         <span data-i18n="f3_q">Mashinamga Yandex stikerlarini yopishtirish shartmi?</span>
                         <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
                     </summary>
-                    <p class="text-gray-600 mt-4 leading-relaxed" data-i18n="f3_a">Yo'q, bu majburiy emas. O'z xohishingiz bilan yopishtirmasdan ham ishlashingiz mumkin. Lekin, avtomobilni brending qilsangiz (stiker yopishtirsangiz), sizga buyurtmalar ko'proq tushishi uchun ustuvorlik (prioritet) beriladi.</p>
+                    <p class="text-gray-600 mt-4 leading-relaxed" data-i18n="f3_a">Yo'q, bu majburiy emas. O'z
+                        xohishingiz bilan yopishtirmasdan ham ishlashingiz mumkin. Lekin, avtomobilni brending qilsangiz
+                        (stiker yopishtirsangiz), sizga buyurtmalar ko'proq tushishi uchun ustuvorlik (prioritet)
+                        beriladi.</p>
                 </details>
             </div>
         </div>
@@ -170,27 +222,55 @@
         <div class="container mx-auto px-6">
             <div class="max-w-xl mx-auto bg-gray-800 p-8 md:p-10 rounded-2xl shadow-2xl border border-gray-700">
                 <h2 class="text-3xl font-bold text-center mb-2" data-i18n="form_title">Taksoparkka ulanish</h2>
-                <p class="text-center text-gray-400 mb-8" data-i18n="form_desc">Ma'lumotlaringizni qoldiring, operatorlarimiz tez orada siz bilan bog'lanishadi.</p>
-                
-                <form id="telegramForm" class="space-y-6 text-gray-800">
-                    <!-- HONEYPOT FIELD: Bot tuzog'i -->
-                    <input type="text" id="spam_trap" name="spam_trap" class="h-pot" tabindex="-1" autocomplete="off">
+                <p class="text-center text-gray-400 mb-8" data-i18n="form_desc">Ma'lumotlaringizni qoldiring,
+                    operatorlarimiz tez orada siz bilan bog'lanishadi.</p>
 
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="form_name_label">Ismingiz</label>
-                        <input type="text" id="ism" required class="w-full px-4 py-4 rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none text-lg" data-i18n-placeholder="form_name_ph" placeholder="Masalan: Alisher">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="form_phone_label">Telefon raqamingiz</label>
-                        <input type="tel" id="tel" required class="w-full px-4 py-4 rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none text-lg" placeholder="+998 90 123 45 67">
-                    </div>
-                    <button type="submit" id="submitBtn" class="w-full bg-yellow-500 text-black mt-4 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition shadow-md" data-i18n="form_btn">
-                        Arizani yuborish
-                    </button>
-                    
-                    <p id="successMsg" class="text-green-400 text-center font-medium hidden mt-4" data-i18n="form_success">Arizangiz yuborildi! Tez orada aloqaga chiqamiz.</p>
-                    <p id="errorMsg" class="text-red-400 text-center font-medium hidden mt-4" data-i18n="form_error">Xatolik yuz berdi. Qaytadan urinib ko'ring.</p>
-                </form>
+                <form id="telegramForm" class="space-y-6 text-gray-800" enctype="multipart/form-data">
+    <input type="text" id="spam_trap" name="spam_trap" class="h-pot" tabindex="-1" autocomplete="off">
+
+    <div>
+        <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="form_name_label">Ismingiz</label>
+        <input type="text" id="ism" name="ism" required class="w-full px-4 py-4 rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none text-lg bg-gray-700 text-white" data-i18n-placeholder="form_name_ph" placeholder="Masalan: Alisher">
+    </div>
+    
+    <div>
+        <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="form_phone_label">Telefon raqamingiz</label>
+        <input type="tel" id="tel" name="tel" required class="w-full px-4 py-4 rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none text-lg bg-gray-700 text-white" placeholder="+998 90 123 45 67">
+    </div>
+    
+    <!-- Prava yuklash -->
+    <div class="space-y-3 pt-2">
+        <h3 class="text-yellow-500 font-bold text-lg border-b border-gray-600 pb-2">Haydovchilik guvohnomasi (Prava)</h3>
+        <div>
+            <label class="block text-sm font-medium text-gray-400 mb-1">Old tomoni (Yuz qismi)</label>
+            <input type="file" name="prava_front" accept="image/*" required class="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-yellow-500 file:text-black">
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-400 mb-1">Orqa tomoni</label>
+            <input type="file" name="prava_back" accept="image/*" required class="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-yellow-500 file:text-black">
+        </div>
+    </div>
+
+    <!-- Tex. pasport yuklash -->
+    <div class="space-y-3 pt-4">
+        <h3 class="text-yellow-500 font-bold text-lg border-b border-gray-600 pb-2">Tex. pasport</h3>
+        <div>
+            <label class="block text-sm font-medium text-gray-400 mb-1">Old tomoni</label>
+            <input type="file" name="tex_front" accept="image/*" required class="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-yellow-500 file:text-black">
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-400 mb-1">Orqa tomoni</label>
+            <input type="file" name="tex_back" accept="image/*" required class="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border-none focus:ring-2 focus:ring-yellow-500 outline-none file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-yellow-500 file:text-black">
+        </div>
+    </div>
+
+    <button type="submit" id="submitBtn" class="w-full bg-yellow-500 text-black mt-6 py-4 rounded-lg font-bold text-xl hover:bg-yellow-400 transition shadow-md" data-i18n="form_btn">
+        Arizani yuborish
+    </button>
+    
+    <p id="successMsg" class="text-green-400 text-center font-medium hidden mt-4" data-i18n="form_success">Muvaffaqiyatli yuborildi!</p>
+    <p id="errorMsg" class="text-red-400 text-center font-medium hidden mt-4" data-i18n="form_error">Xatolik yuz berdi. Qaytadan urinib ko'ring.</p>
+</form>
             </div>
         </div>
     </section>
@@ -200,35 +280,49 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12" data-i18n="contact_title">Biz bilan bog'lanish</h2>
             <div class="flex flex-col md:flex-row gap-10 max-w-6xl mx-auto items-center">
-                
+
                 <!-- Kontakt ma'lumotlari -->
                 <div class="w-full md:w-1/3 space-y-6">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-gray-100 text-yellow-500 rounded-full flex items-center justify-center text-xl"><i class="fa-solid fa-phone"></i></div>
+                        <div
+                            class="w-12 h-12 bg-gray-100 text-yellow-500 rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
                         <div class="text-left">
                             <p class="text-gray-500 text-sm" data-i18n="contact_phone">Telefon:</p>
-                            <a href="tel:+998333180010" class="font-bold text-lg hover:text-yellow-500">+998 33 318 00 10</a>
+                            <a href="tel:+998333180010" class="font-bold text-lg hover:text-yellow-500">+998 33 318 00
+                                10</a>
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-gray-100 text-yellow-500 rounded-full flex items-center justify-center text-xl"><i class="fa-brands fa-telegram"></i></div>
+                        <div
+                            class="w-12 h-12 bg-gray-100 text-yellow-500 rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
                         <div class="text-left">
                             <p class="text-gray-500 text-sm" data-i18n="contact_tg">Telegram:</p>
-                            <a href="https://t.me/park_pegas_yandex" class="font-bold text-lg hover:text-yellow-500">@park_pegas_yandex</a>
+                            <a href="https://t.me/park_pegas_yandex"
+                                class="font-bold text-lg hover:text-yellow-500">@park_pegas_yandex</a>
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-gray-100 text-yellow-500 rounded-full flex items-center justify-center text-xl"><i class="fa-solid fa-location-dot"></i></div>
+                        <div
+                            class="w-12 h-12 bg-gray-100 text-yellow-500 rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
                         <div class="text-left">
                             <p class="text-gray-500 text-sm" data-i18n="contact_address">Manzil:</p>
-                            <p class="font-bold text-lg" data-i18n="contact_address_val">Xorazm viloyati, Urganch sh., Park Pegas</p>
+                            <p class="font-bold text-lg" data-i18n="contact_address_val">Xorazm viloyati, Urganch sh.,
+                                Park Pegas</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Google Maps -->
                 <div class="w-full md:w-2/3 h-72 bg-gray-200 rounded-2xl overflow-hidden shadow-lg relative">
-                    <iframe class="absolute inset-0 w-full h-full" src="https://maps.google.com/maps?q=41.5442834,60.6154546&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" style="border:0;"></iframe>
+                    <iframe class="absolute inset-0 w-full h-full"
+                        src="https://maps.google.com/maps?q=41.5442834,60.6154546&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" style="border:0;"></iframe>
                 </div>
 
             </div>
@@ -303,54 +397,54 @@
 
         // TELEGRAM BOT SOZLAMALARI (TEST UCHUN VAQTINCHA SHU YERDA)
         // Haqiqiy saytga qo'yganingizda PHP (send.php) orqali yuborganingiz xavfsizroq bo'ladi
-        const BOT_TOKEN = 'BU_YERGA_BOT_TOKEN_YOZILADI'; 
-        const CHAT_ID = 'BU_YERGA_CHAT_ID'; 
+        const BOT_TOKEN = 'BU_YERGA_BOT_TOKEN_YOZILADI';
+        const CHAT_ID = 'BU_YERGA_CHAT_ID';
 
         document.getElementById('telegramForm').addEventListener('submit', function(e) {
-            e.preventDefault(); 
-            
-            const submitBtn = document.getElementById('submitBtn');
-            const successMsg = document.getElementById('successMsg');
-            const errorMsg = document.getElementById('errorMsg');
-            
-            // 1. HONEYPOT
-            const spamTrap = document.getElementById('spam_trap').value;
-            if (spamTrap !== "") { return false; }
+    e.preventDefault(); 
+    
+    const submitBtn = document.getElementById('submitBtn');
+    const successMsg = document.getElementById('successMsg');
+    const errorMsg = document.getElementById('errorMsg');
+    
+    const spamTrap = document.getElementById('spam_trap').value;
+    if (spamTrap !== "") { return false; }
 
-            // 2. RATE LIMIT
-            const lastSubmit = localStorage.getItem('lastSubmitTime');
-            const now = Date.now();
-            if (lastSubmit && (now - lastSubmit < 60000)) {
-                errorMsg.innerText = translations[currentLang]['form_spam'];
-                errorMsg.classList.remove('hidden'); successMsg.classList.add('hidden');
-                return false;
-            }
+    const lastSubmit = localStorage.getItem('lastSubmitTime');
+    const now = Date.now();
+    if (lastSubmit && (now - lastSubmit < 60000)) {
+        errorMsg.innerText = translations[currentLang]['form_spam'] || 'Iltimos, 1 daqiqa kuting';
+        errorMsg.classList.remove('hidden'); successMsg.classList.add('hidden');
+        return false;
+    }
 
-            const ism = document.getElementById('ism').value;
-            const tel = document.getElementById('tel').value;
+    // FORMADAGI BARCHA MATN VA RASMLARNI AVTOMATIK OLISH:
+    const formData = new FormData(this);
 
-            const text = `🚕 Yangi haydovchi arizasi!\n\n👤 Ism: ${ism}\n📞 Telefon: ${tel}`;
-            const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(text)}`;
+    submitBtn.disabled = true;
+    submitBtn.innerText = translations[currentLang]['form_sending'] || 'Yuborilmoqda...'; 
 
-            submitBtn.disabled = true;
-            submitBtn.innerText = translations[currentLang]['form_sending']; 
-
-            fetch(url).then(response => {
-                if (response.ok) {
-                    localStorage.setItem('lastSubmitTime', Date.now());
-                    successMsg.classList.remove('hidden'); errorMsg.classList.add('hidden'); document.getElementById('telegramForm').reset();
-                } else {
-                    errorMsg.innerText = translations[currentLang]['form_error'];
-                    errorMsg.classList.remove('hidden'); successMsg.classList.add('hidden');
-                }
-            }).catch(() => {
-                errorMsg.innerText = translations[currentLang]['form_error'];
-                errorMsg.classList.remove('hidden'); successMsg.classList.add('hidden');
-            }).finally(() => {
-                submitBtn.disabled = false; submitBtn.innerText = translations[currentLang]['form_btn']; 
-                setTimeout(() => { successMsg.classList.add('hidden'); errorMsg.classList.add('hidden'); }, 5000);
-            });
-        });
+    fetch('send.php', {
+        method: 'POST',
+        body: formData
+    }).then(response => {
+        if (response.ok) {
+            localStorage.setItem('lastSubmitTime', Date.now());
+            successMsg.classList.remove('hidden'); errorMsg.classList.add('hidden'); 
+            this.reset(); // Formani tozalash
+        } else {
+            throw new Error('Server xatoligi');
+        }
+    }).catch(() => {
+        errorMsg.innerText = translations[currentLang]['form_error'] || 'Xatolik yuz berdi';
+        errorMsg.classList.remove('hidden'); successMsg.classList.add('hidden');
+    }).finally(() => {
+        submitBtn.disabled = false; 
+        submitBtn.innerText = translations[currentLang]['form_btn'] || 'Arizani yuborish'; 
+        setTimeout(() => { successMsg.classList.add('hidden'); errorMsg.classList.add('hidden'); }, 5000);
+    });
+});
     </script>
 </body>
+
 </html>
